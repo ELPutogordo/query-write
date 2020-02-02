@@ -63,12 +63,12 @@ altitude=$(xmllint --xpath "/*[local-name()='kml']/*[local-name()='Document']//*
 heading=$(xmllint --xpath "/*[local-name()='kml']/*[local-name()='Document']//*[local-name()='Placemark']/*[local-name()='LookAt']/*[local-name()='heading']/text()" /tmp/QueryWriteTemp/doc.xml)
 tilt=$(xmllint --xpath "/*[local-name()='kml']/*[local-name()='Document']//*[local-name()='Placemark']/*[local-name()='LookAt']/*[local-name()='tilt']/text()" /tmp/QueryWriteTemp/doc.xml)
 range=$(xmllint --xpath "/*[local-name()='kml']/*[local-name()='Document']//*[local-name()='Placemark']/*[local-name()='LookAt']/*[local-name()='range']/text()" /tmp/QueryWriteTemp/doc.xml)
-echo "Praised data field name = $name"
-echo "Praised data field latitude = $latitude"
-echo "Praised data field longitude = $longitude"
-echo "Praised data field altitude = $altitude"
-echo "Praised data field tilt = $tilt"
-echo "Praised data field range = $range"
+echo "Parsed data field name = $name"
+echo "Parsed data field latitude = $latitude"
+echo "Parsed data field longitude = $longitude"
+echo "Parsed data field altitude = $altitude"
+echo "Parsed data field tilt = $tilt"
+echo "Parsed data field range = $range"
 echo "Is altitude relative to sea floor? [Y/N]"
 read -n 1 relativeAltitude
 read -p ""
