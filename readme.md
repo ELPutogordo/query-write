@@ -53,12 +53,12 @@ After this step the script will create a temporal directory and will extract the
 
 The script will also convert the kml file to xml file and using `xmllint --xpath` commands will praise data elements. The output given should be:
 
-    Praised data field name = *string*
-    Praised data field latitude = *value*
-    Praised data field longitude = *value*
-    Praised data field altitude = *value*
-    Praised data field tilt = *value*
-    Praised data field range = *value*
+    Parsed data field name = *string*
+    Parsed data field latitude = *value*
+    Parsed data field longitude = *value*
+    Parsed data field altitude = *value*
+    Parsed data field tilt = *value*
+    Parsed data field range = *value*
 
 Afterwards, you will be asked if the altitude parameter is relative to the sea or relative to the ground. 
 
